@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/sort_icon_bg_click"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <com.example.localmusicplayer.view.SideBar
+            android:id="@+id/SideBarView"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center"
+            android:background="@color/transparent" />
+        <ImageView 
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/toPage2"
+            android:src="@drawable/right"
+            android:layout_gravity="right|center"
+            />
+    </FrameLayout>
+
+</LinearLayout>

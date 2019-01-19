@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/listView_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/listView_catalog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:text="A"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/whitesmoke" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/listView_login"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/name_login" />
+
+            <TextView
+                android:id="@+id/listView_item_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/listView_item_songName"
+                android:layout_alignBottom="@+id/listView_item_songName"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/listView_login"
+                android:text="1."
+                android:textColor="@color/whitesmoke"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/listView_item_songName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/listView_item_id"
+                android:layout_weight="1"
+                android:maxEms="8"
+                android:maxLines="1"
+                android:text="如果我变成回忆"
+                android:textColor="@color/whitesmoke"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/listView_item_singer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/listView_login"
+                android:layout_alignLeft="@+id/listView_item_songName"
+                android:layout_marginTop="5dp"
+                android:maxEms="8"
+                android:maxLines="1"
+                android:text="tank"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/listView_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/listView_item_songName"
+                android:layout_alignBottom="@+id/listView_item_songName"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="14dp"
+                android:text="3:40"
+                android:textColor="@color/whitesmoke"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0072e3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <ImageView 
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back1"
+            android:id="@+id/back"
+            />
+        <EditText 
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@null"
+            android:layout_weight="1"
+            android:id="@+id/key"
+            android:hint="请输入歌名或者关键词"
+            />
+        <ImageView 
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/sure"
+            android:src="@drawable/sure"
+            />
+        
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
